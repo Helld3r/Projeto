@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<html lang="pt-br">
+      <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>É Memo?</title>
+            <link rel="stylesheet" href="style.css">
+            <script src="app.js" defer></script>
+            <link rel="icon" type="image/x-icon" href="favicon.ico">
+      </head>
+
+
+      <body>
+            <header>
+                  <img src = "imagem.png" class = "cabecalho">
+            </header>
+            <main>
+                  <h2>Despesa: </h2>
+
+                  <input type="text" id="inputText" placeholder="Insira a despesa aqui">
+
+                  <h2>Escolha suas opções:</h2>
+
+
+                <div class="container">
+    <form id="myForm">
+        <input type="radio" id="opcao1" name="opcao" value="Bina OQP OK.">
+        <label for="opcao1"> Não consta na Base O Que Procura</label><br>
+
+        <input type="radio" id="opcao2" name="opcao" value="MD OK.">
+        <label for="opcao2"> Utilizada a Mesa de decisão</label><br>
+
+        <input type="radio" id="opcao3" name="opcao" value="TH OK.">
+        <label for="opcao3"> Bina Valida no TH</label><br>
+
+        <input type="radio" id="opcao4" name="opcao" value="Matriz OK.">
+        <label for="opcao4"> Matriz <strong>não</strong> indica risco</label><br><br>
+
+        <input type="radio" id="opcao5" name="opcao" value="Cli rec desp.">
+        <label for="opcao5"> Cliente reconhece a despesa</label><br>
+
+        <input type="radio" id="opcao6" name="opcao" value="Cli n rec desp.">
+        <label for="opcao6"> Cliente <strong>não</strong> reconhece a despesa</label><br>
+
+        <input type="radio" id="opcao7" name="opcao" value="bina ok, cb sem recusas pertinentes CB ATV cli ciente.">
+        <label for="opcao7">Ligação Não pertinente</label><br>
+        <br>
+    </form>
+</div>
+
+
+                        </form>
+                        <form id = "myForm2">
+                              <input type = "radio" id = "resp1" name = "statusdocb" value = "cb atv">
+                              <label for = "resp1">Cartão desbloquado</label></br>
+
+                              <input type = "radio" id = "resp2" name = "statusdocb" value = "cb atv, flex pan liberado">
+                              <label for = "resp2">Cartão desbloquado e flex pan liberado </label></br>
+
+                              <input type = "radio" id = "resp3" name = "statusdocb" value = "CB seg canc c/ reem">
+                              <label for = "resp3">Cartão cancelado <strong>COM</strong> reemissão </label></br>
+
+                              <input type = "radio" id = "resp4" name = "statusdocb" value = "CB seg canc c/ reem cli enc para contestação">
+                              <label for = "resp4">Cartão cancelado <strong>COM</strong> reemissão e encaminhado para contestação</label></br>
+
+                              <input type = "radio" id = "resp5" name = "statusdocb" value = "CB seg canc s/ reem">
+                              <label for = "resp5">Cartão cancelado <strong>SEM</strong> reemissão</label></br>
+
+                              <input type = "radio" id = "resp6" name = "statusdocb" value = "CB seg canc s/ reem cli enc para contestação">
+                              <label for = "resp6">Cartão cancelado <strong>SEM</strong> reemissão e encaminhado para contestação</label></br>
+
+                              <input type = "radio" id = "resp7" name = "statusdocb" value = "CB seg canc c/ reem cli enc para contestação">
+                              <label for = "resp7">Cartão Bloqueado ou Permanece bloqueado</label></br>  
+                        </form>
+
+                  </div>
+                  <input class="botao" type = "button" onclick = "novoAtendimento()" Value = "Novo Atendimento">
+                  <h3>Assinatura:</h3>
+
+
+                  <input type="text" id="assinatura" placeholder="Insira assinatura aqui"></br><br>
+
+                  <input class = "botao" type="button" onclick="myFunction()"  value="Gerar Memo"><br><br>
+                  <p id="demo"></p><br>
+                  <input class = "botao" type= "button" id = "copiarMemo" onclick="copiarMemo()" value="Copiar Memo">
+
+
+
+            </main>
+
 </body>
 </html>
